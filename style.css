@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+}
+
+a{
+    color: black;
+}
+
+i{
+    font-size: 24px;
+}
+
+/* Header Section */
+.top-main-header{
+    position: sticky;
+    top: 0;
+    z-index: 30;
+   height: 72px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 48px;
+   padding-right: 48px;
+}
+
+.top-main-header > nav{
+    display: flex;
+    gap: 16px;
+}
+
+.top-main-header > nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#header-acc-sec button{
+ background-color: transparent;
+ border: none;
+}
+
+
+.header-adrs-sec{
+    background-color: rgb(220, 220, 220);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 132px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Carousel Section */
+
+.carousel-sec{
+    position: relative;
+}
+
+.carousel-sec img{
+    width: 100%;
+}
+
+.chevron-btn{
+    background-color: rgb(211, 211, 211);
+    padding: 24px 8px;
+    border: none;
+}
+
+.left, .right{
+   position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left{
+    left: 24px;
+}
+
+.right{
+    right: 24px;
+}
+
+/* .left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+} */
+
+
+/* Category Section  */
+
+.category-sec{
+padding-left: 48px;
+padding-right: 48px;
+}
+
+.cat-name-sec{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+
+.cat-card{
+  position: relative;
+}
+.cat-card img{
+  width: 100%;
+}
+
+.cat-card p{
+  position: absolute;
+  left: 50%;
+  bottom: 46px;
+  transform: translateX(-50%);
+}
