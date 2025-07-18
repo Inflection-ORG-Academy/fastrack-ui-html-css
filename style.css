@@ -13,6 +13,15 @@ i{
     font-size: 24px;
 }
 
+.px-48{
+    padding-left: 48px;
+   padding-right: 48px;
+}
+
+.mt-36{
+    margin-top: 56px;
+}
+
 /* Header Section */
 .top-main-header{
     position: sticky;
@@ -23,8 +32,7 @@ i{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-left: 48px;
-   padding-right: 48px;
+
 }
 
 .top-main-header > nav{
@@ -102,11 +110,6 @@ i{
 
 /* Category Section  */
 
-.category-sec{
-padding-left: 48px;
-padding-right: 48px;
-}
-
 .cat-name-sec{
 
     display: grid;
@@ -119,6 +122,7 @@ padding-right: 48px;
   position: relative;
 }
 .cat-card img{
+    border-radius: 8px;
   width: 100%;
 }
 
@@ -127,4 +131,80 @@ padding-right: 48px;
   left: 50%;
   bottom: 46px;
   transform: translateX(-50%);
+}
+
+.cat-name-sec > section h3{
+    transform: translateY(90%) rotate(-90deg);
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.vibe-shop-sec{
+
+}
+.vibe-shop-sec h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.vibe-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
+.vibe-card-container figure{
+position: relative;
+}
+
+.vibe-card-container img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.arrow-wraper{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-react{
+    height: 80px;
+    width: 90%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow-react i{
+   opacity: 0;
+   transition-delay: 0.3s;
+   transition-duration: 0.5s;
+}
+
+
+.arrow-react h3{
+    transition-duration: 0.5s;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+
+.arrow-wraper:hover h3{
+    transform: translateX(100%);
+}
+.arrow-wraper:hover i{
+   opacity: 1;;
+}
+
+.arrow-right{
+    height: 0;
+    width: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 80px solid black;
 }
