@@ -36,7 +36,7 @@ i{
    display: flex;
    align-items: center;
    justify-content: space-between;
-
+    gap: 36px;
 }
 
 .top-main-header > nav{
@@ -48,6 +48,12 @@ i{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+#header-acc-sec{
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 #header-acc-sec button{
@@ -65,6 +71,17 @@ i{
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+
+/* Responsive Header for screen 1280px and less */
+
+@media screen and (max-width:1280px) {
+    
+  .top-main-header > nav{
+    display: none;
+}  
+
 }
 
 /* Carousel Section */
@@ -289,4 +306,37 @@ position: relative;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-left: 80px solid black;
+}
+
+.grid-main-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.grid-main-parent img{
+    width: 100%;
+}
+
+
+.grid-main-parent > div{
+    position: relative;
+}
+
+.grid-main-parent > div .insta-overlay{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.619);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s;
+}
+
+.grid-main-parent > div:hover  .insta-overlay{
+    opacity: 1;
 }
